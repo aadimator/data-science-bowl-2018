@@ -8,9 +8,13 @@ Rename the container
 
 	docker rename <original container name> keras
 
-To start the container the container:
+To start the container:
 
 	docker start keras
+
+To stop the container:
+
+	docker stop keras
 
 To see the notebook URL:
 
