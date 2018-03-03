@@ -42,7 +42,9 @@ RUN conda install -y python=${python_version} && \
 RUN conda install -c conda-forge jupyterlab && \
 	conda clean -yt
 
-RUN conda install scikit-image && conda clean -yt
+RUN conda install scikit-image && \
+	pip install keras-resnet && \
+	conda clean -yt
 
 ADD theanorc /home/keras/.theanorc
 

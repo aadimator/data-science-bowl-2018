@@ -1,5 +1,24 @@
 # 2018 Data Science Bowl
 
+Build the container and start jupyter lab
+
+	make notebook GPU=0
+
+Rename the container
+
+	docker rename <original container name> keras
+
+To start the container the container:
+
+	docker start keras
+
+To see the notebook URL:
+
+	docker logs keras
+
+To start bash inside running container:
+
+	docker exec -it keras bash
 
 # Using Keras via Docker
 Taken from the official repo of Keras.
